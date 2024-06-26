@@ -11,7 +11,7 @@ from xgboost import XGBRegressor
 from sklearn.ensemble import RandomForestRegressor, ExtraTreesRegressor
 from sklearn.metrics import r2_score, mean_absolute_error
 import yfinance as yf
-import pandas as pd
+
 if not st.session_state.get('logged_in'):
     st.session_state['login_message'] = "Please get login first 😊"
     st.switch_page("00_🔒_Login.py")

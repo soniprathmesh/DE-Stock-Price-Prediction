@@ -1,30 +1,17 @@
 # Imports
 import plotly.graph_objects as go
 import streamlit as st
-import streamlit as st
-from ta.volatility import BollingerBands
-from ta.trend import MACD, EMAIndicator, SMAIndicator
-from ta.momentum import RSIIndicator
-import datetime
-from sklearn.preprocessing import StandardScaler
-from sklearn.model_selection import train_test_split
-from sklearn.linear_model import LinearRegression
-from sklearn.neighbors import KNeighborsRegressor
-from xgboost import XGBRegressor
-from sklearn.ensemble import RandomForestRegressor, ExtraTreesRegressor
-from sklearn.metrics import r2_score, mean_absolute_error
-import yfinance as yf
-import pandas as pd
-
 # Import helper functions
 
 if not st.session_state.get('logged_in'):
     st.session_state['login_message'] = "Please get login first 😊"
     st.switch_page("00_🔒_Login.py")
+
 import sys
 sys.path.append("..")  # Add parent directory to sys path to import login.py
 from helper import *
 # Configure the page
+
 st.set_page_config(
     page_title="Stock Price Prediction",
     page_icon="📈",

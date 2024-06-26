@@ -1,7 +1,4 @@
-# Import streamlit
 import streamlit as st
-
-# Import helper functions
 
 if not st.session_state.get('logged_in'):
     st.session_state['login_message'] = "Please get login first 😊"

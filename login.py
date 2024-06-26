@@ -11,7 +11,12 @@ def hash_password(password):
 # Predefined users (Add your credentials here)
 users = {
     "user1": hash_password("password123"),
-    "user2": hash_password("mysecurepassword"),
+    "admin": hash_password("mk"),
+    "janak": hash_password("Janak"),
+    "manthan": hash_password("Manthan"),
+    "pk": hash_password("Pk"),
+    "vraj": hash_password("Vraj"),
+    "prathmesh": hash_password("Prathmesh"),
 }
 
 def check_credentials(username, password):
@@ -35,7 +40,8 @@ def login():
         if check_credentials(username, password):
             st.session_state['logged_in'] = True
             st.session_state['username'] = username
-            st.experimental_rerun()
+            # st.experimental_rerun()
+            st.rerun()
         else:
             st.error("Invalid username or password")
 
