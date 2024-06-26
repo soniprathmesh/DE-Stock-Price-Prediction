@@ -1,10 +1,5 @@
 import streamlit as st
 
-st.set_page_config(
-    page_title="Stock Prediction App",
-    page_icon="😎",
-)
-
 st.markdown(
     """# 📈 **StocksPricePrediction**
 ### **Predicting Stocks with ML**
@@ -52,3 +47,4 @@ Some potential features for future releases:
 **This is not financial advice! Use forecast data to inform your own investment research. No guarantee of trading performance.**
 """
 )
+# Initialize session state for login

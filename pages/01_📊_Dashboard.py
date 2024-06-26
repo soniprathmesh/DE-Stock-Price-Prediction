@@ -1,4 +1,6 @@
-# # import streamlit as st
+
+
+# #
 # from streamlit_option_menu import option_menu
 # from ta.volatility import BollingerBands
 # from ta.trend import MACD, EMAIndicator, SMAIndicator
@@ -258,6 +260,16 @@ from plotly import graph_objects as go
 from stocknews import StockNews
 import matplotlib.pyplot as plt
 import pandas as pd
+
+# Check if user is logged in
+if not st.session_state.get('logged_in'):
+    st.session_state['login_message'] = "Please get login first 😊"
+    st.switch_page("00_🔒_Login.py")
+import sys
+sys.path.append("..")
+from login import login
+login()
+
 
 
 @st.cache_resource

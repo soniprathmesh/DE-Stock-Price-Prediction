@@ -2,8 +2,11 @@
 import streamlit as st
 
 # Import helper functions
-from helper import *
 
+if not st.session_state.get('logged_in'):
+    st.session_state['login_message'] = "Please get login first 😊"
+    st.switch_page("00_🔒_Login.py")
+from helper import *
 # Configure the page
 st.set_page_config(
     page_title="Stock Info",

@@ -9,7 +9,7 @@ sys.path.insert(0, os.path.dirname(__file__))
 # Function to start Streamlit
 def run_streamlit():
     streamlit_path = os.path.join(os.path.dirname(__file__), 'Main.py')
-    streamlit_path = '/home/prathmes/test.cse-aiml.live/Main.py'
+    streamlit_path = '/home/prathmes/test.cse-aiml.live/"00_🔒_Login.py"'
     subprocess.run(['streamlit', 'run', streamlit_path, '--server.port=8501'])
 
 # Start Streamlit in a separate thread

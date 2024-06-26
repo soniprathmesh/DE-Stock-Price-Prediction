@@ -2,7 +2,9 @@ import streamlit as st
 from stocknews import StockNews
 import yfinance as yf
 import datetime
-
+if not st.session_state.get('logged_in'):
+    st.session_state['login_message'] = "Please get login first 😊"
+    st.switch_page("00_🔒_Login.py")
 st.header("Top 10 Headlines")
 
 # Initialize StockNews object with a list of stock symbols

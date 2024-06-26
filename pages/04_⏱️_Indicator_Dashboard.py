@@ -12,11 +12,14 @@ from sklearn.ensemble import RandomForestRegressor, ExtraTreesRegressor
 from sklearn.metrics import r2_score, mean_absolute_error
 import yfinance as yf
 import pandas as pd
-
-from helper import fetch_stocks
+if not st.session_state.get('logged_in'):
+    st.session_state['login_message'] = "Please get login first 😊"
+    st.switch_page("00_🔒_Login.py")
+# from helper import fetch_stocks
 
 
 # Define the main function
+
 def main():
 
     option = st.sidebar.selectbox('Make a choice', ['Visualize', 'Recent Data', 'Predict'])

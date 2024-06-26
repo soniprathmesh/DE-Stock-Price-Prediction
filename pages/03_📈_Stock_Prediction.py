@@ -17,8 +17,13 @@ import yfinance as yf
 import pandas as pd
 
 # Import helper functions
-from helper import *
 
+if not st.session_state.get('logged_in'):
+    st.session_state['login_message'] = "Please get login first 😊"
+    st.switch_page("00_🔒_Login.py")
+import sys
+sys.path.append("..")  # Add parent directory to sys path to import login.py
+from helper import *
 # Configure the page
 st.set_page_config(
     page_title="Stock Price Prediction",
