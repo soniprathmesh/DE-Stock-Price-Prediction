@@ -1,0 +1,21 @@
+# DO NOT REMOVE. CLOUDLINUX PASSENGER CONFIGURATION BEGIN
+PassengerAppRoot "/home/prathmes/test.cse-aiml.live"
+PassengerBaseURI "/"
+PassengerPython "/home/prathmes/virtualenv/test.cse-aiml.live/3.11/bin/python"
+# DO NOT REMOVE. CLOUDLINUX PASSENGER CONFIGURATION END
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{HTTP_HOST} ^test.cse-aiml.live$
+RewriteRule ^(.*)$ http://190.92.174.28:8501/$1 [P,L]
+
+
+<IfModule mod_proxy.c>
+    ProxyRequests Off
+    <Proxy *>
+        Order deny,allow
+        Allow from all
+    </Proxy>
+    ProxyPass / http://190.92.174.28:8501/
+    ProxyPassReverse / http://190.92.174.28:8501/
+</IfModule>

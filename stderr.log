@@ -1,0 +1,147 @@
+  File "/home/prathmes/test.cse-aiml.live/passenger_wsgi.py", line 15
+    from streamlit_app.00_\U0001f60e_Main.py import *
+                         ^
+SyntaxError: invalid decimal literal
+  File "/home/prathmes/test.cse-aiml.live/passenger_wsgi.py", line 15
+    from streamlit_app.00_\U0001f60e_Main.py import *
+                         ^
+SyntaxError: invalid decimal literal
+[UID:1790][4167504] Child process with pid: 4167568 was killed by signal: 15, core dumped: no
+  File "/home/prathmes/test.cse-aiml.live/passenger_wsgi.py", line 15
+    from streamlit_app.00_\U0001f60e_Main.py import *
+                         ^
+SyntaxError: invalid decimal literal
+[UID:1790][4167504] Child process with pid: 4167625 was killed by signal: 15, core dumped: no
+2024-06-25 21:26:07.667 
+  [33m[1mWarning:[0m to view this Streamlit app on a browser, run it with the following
+  command:
+
+    streamlit run lswsgi [ARGUMENTS]
+Traceback (most recent call last):
+  File "/home/prathmes/test.cse-aiml.live/passenger_wsgi.py", line 15, in <module>
+    from streamlit_app.Main.py import *
+ModuleNotFoundError: No module named 'streamlit_app.Main.py'; 'streamlit_app.Main' is not a package
+Traceback (most recent call last):
+  File "/home/prathmes/test.cse-aiml.live/passenger_wsgi.py", line 15, in <module>
+    from streamlit_app.Main.py import *
+ModuleNotFoundError: No module named 'streamlit_app.Main.py'; 'streamlit_app.Main' is not a package
+[UID:1790][4173626] Child process with pid: 4173778 was killed by signal: 15, core dumped: no
+Traceback (most recent call last):
+  File "/home/prathmes/test.cse-aiml.live/passenger_wsgi.py", line 15, in <module>
+    from streamlit_app.Main.py import *
+ModuleNotFoundError: No module named 'streamlit_app.Main.py'; 'streamlit_app.Main' is not a package
+[UID:1790][4173626] Child process with pid: 4173868 was killed by signal: 15, core dumped: no
+2024-06-25 21:26:30.991 
+  [33m[1mWarning:[0m to view this Streamlit app on a browser, run it with the following
+  command:
+
+    streamlit run lswsgi [ARGUMENTS]
+2024-06-25 21:26:30.991588 [ERROR] [UID:1790][0] wsgiHandler getApp [application] failed, pApp=(nil).
+[ERROR] [UID:1790][4176739] wsgiHandler getApp [application] failed, pApp=(nil).
+AttributeError: module 'passenger_wsgi' has no attribute 'application'
+[ERROR] [UID:1790][4176739] wsgiHandler getApp [application] failed, pApp=(nil).
+AttributeError: module 'passenger_wsgi' has no attribute 'application'
+2024-06-25 21:29:42.061 
+  [33m[1mWarning:[0m to view this Streamlit app on a browser, run it with the following
+  command:
+
+    streamlit run lswsgi [ARGUMENTS]
+2024-06-25 21:29:42.062118 [ERROR] [UID:1790][0] wsgiHandler getApp [application] failed, pApp=(nil).
+[ERROR] [UID:1790][3937] wsgiHandler getApp [application] failed, pApp=(nil).
+AttributeError: module 'passenger_wsgi' has no attribute 'application'
+[ERROR] [UID:1790][3937] wsgiHandler getApp [application] failed, pApp=(nil).
+AttributeError: module 'passenger_wsgi' has no attribute 'application'
+[ERROR] [UID:1790][3937] wsgiHandler getApp [application] failed, pApp=(nil).
+AttributeError: module 'passenger_wsgi' has no attribute 'application'
+[ERROR] [UID:1790][3937] wsgiHandler getApp [application] failed, pApp=(nil).
+AttributeError: module 'passenger_wsgi' has no attribute 'application'
+2024-06-25 21:30:43.260 
+  [33m[1mWarning:[0m to view this Streamlit app on a browser, run it with the following
+  command:
+
+    streamlit run lswsgi [ARGUMENTS]
+Traceback (most recent call last):
+  File "/home/prathmes/test.cse-aiml.live/passenger_wsgi.py", line 9, in <module>
+    application = wsgi.application
+                  ^^^^^^^^^^^^^^^^
+AttributeError: module 'wsgi' has no attribute 'application'
+Traceback (most recent call last):
+  File "/home/prathmes/test.cse-aiml.live/passenger_wsgi.py", line 9, in <module>
+    application = wsgi.application
+                  ^^^^^^^^^^^^^^^^
+AttributeError: module 'wsgi' has no attribute 'application'
+[UID:1790][11598] Child process with pid: 11723 was killed by signal: 15, core dumped: no
+Traceback (most recent call last):
+  File "/home/prathmes/test.cse-aiml.live/passenger_wsgi.py", line 9, in <module>
+    application = wsgi.application
+                  ^^^^^^^^^^^^^^^^
+AttributeError: module 'wsgi' has no attribute 'application'
+[UID:1790][11598] Child process with pid: 11747 was killed by signal: 15, core dumped: no
+[UID:1790][135916] Child process with pid: 137593 was killed by signal: 15, core dumped: no
+Exception in thread Thread-1 (run_streamlit):
+Traceback (most recent call last):
+  File "/opt/alt/python311/lib64/python3.11/threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "/opt/alt/python311/lib64/python3.11/threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/prathmes/test.cse-aiml.live/passenger_wsgi.py", line 13, in run_streamlit
+    subprocess.run(['streamlit', 'run', streamlit_path, '--server.port=8501'])
+  File "/opt/alt/python311/lib64/python3.11/subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/alt/python311/lib64/python3.11/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/opt/alt/python311/lib64/python3.11/subprocess.py", line 1955, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'streamlit'
+Exception in thread Thread-1 (run_streamlit):
+Traceback (most recent call last):
+  File "/opt/alt/python311/lib64/python3.11/threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "/opt/alt/python311/lib64/python3.11/threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/prathmes/test.cse-aiml.live/passenger_wsgi.py", line 13, in run_streamlit
+    subprocess.run(['streamlit', 'run', streamlit_path, '--server.port=8501'])
+  File "/opt/alt/python311/lib64/python3.11/subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/alt/python311/lib64/python3.11/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/opt/alt/python311/lib64/python3.11/subprocess.py", line 1955, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'streamlit'
+[UID:1790][143443] Child process with pid: 143891 was killed by signal: 15, core dumped: no
+[UID:1790][143443] Child process with pid: 145283 was killed by signal: 15, core dumped: no
+[UID:1790][143443] Child process with pid: 145339 was killed by signal: 15, core dumped: no
+[UID:1790][143443] Child process with pid: 145342 was killed by signal: 15, core dumped: no
+[UID:1790][143443] Child process with pid: 145346 was killed by signal: 15, core dumped: no
+[UID:1790][143443] Child process with pid: 145349 was killed by signal: 15, core dumped: no
+[UID:1790][143443] Child process with pid: 145354 was killed by signal: 15, core dumped: no
+[UID:1790][143443] Child process with pid: 145363 was killed by signal: 15, core dumped: no
+[UID:1790][143443] Child process with pid: 145378 was killed by signal: 15, core dumped: no
+[UID:1790][143443] Child process with pid: 145387 was killed by signal: 15, core dumped: no
+[UID:1790][143443] Child process with pid: 145394 was killed by signal: 15, core dumped: no
+[UID:1790][143443] Child process with pid: 145399 was killed by signal: 15, core dumped: no
+[UID:1790][143443] Child process with pid: 144302 was killed by signal: 15, core dumped: no
+[UID:1790][143443] Child process with pid: 146836 was killed by signal: 15, core dumped: no
+[UID:1790][143443] Child process with pid: 145401 was killed by signal: 15, core dumped: no
+[UID:1790][143443] Child process with pid: 146909 was killed by signal: 15, core dumped: no
+[UID:1790][143443] Child process with pid: 146870 was killed by signal: 15, core dumped: no
+[UID:1790][143443] Child process with pid: 148442 was killed by signal: 15, core dumped: no
+[UID:1790][143443] Child process with pid: 148643 was killed by signal: 15, core dumped: no
+Exception in thread Thread-1 (run_streamlit):
+Traceback (most recent call last):
+  File "/opt/alt/python311/lib64/python3.11/threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "/opt/alt/python311/lib64/python3.11/threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/prathmes/test.cse-aiml.live/passenger_wsgi.py", line 13, in run_streamlit
+    subprocess.run(['streamlit', 'run', streamlit_path, '--server.port=8501'])
+  File "/opt/alt/python311/lib64/python3.11/subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/alt/python311/lib64/python3.11/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/opt/alt/python311/lib64/python3.11/subprocess.py", line 1955, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'streamlit'
